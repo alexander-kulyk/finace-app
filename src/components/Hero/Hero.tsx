@@ -19,7 +19,7 @@ export const Hero: React.FC<IProps> = ({ children }) => {
             owner, regardless of the background, can now manage their business
             like a pro. Simple. Intuitive. And never boring.
           </S.Paragraph>
-          <Button title={'Join the wait list'} />
+          <Button title={'Join the wait list!!!'} />
         </S.Wrapper>
       </S.Container>
       {children}
