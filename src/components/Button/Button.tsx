@@ -8,5 +8,9 @@ interface IProps {
 }
 
 export const Button: React.FC<IProps> = ({ title }) => {
-  return <S.Button>{title}</S.Button>;
+  return (
+    <S.Button>
+      <S.WrapperTitle>{title}</S.WrapperTitle>
+    </S.Button>
+  );
 };
