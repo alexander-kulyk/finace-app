@@ -1,8 +1,13 @@
 //core
 import React, { ReactNode } from 'react';
 //components
+import { ArrowSVG } from '../../assets/svg';
 import { Button } from '../Button';
 import * as S from './styled';
+
+const buttonStyles = {
+  border: 'none',
+};
 
 interface IProps {
   children: ReactNode;
@@ -19,7 +24,20 @@ export const Hero: React.FC<IProps> = ({ children }) => {
             owner, regardless of the background, can now manage their business
             like a pro. Simple. Intuitive. And never boring.
           </S.Paragraph>
-          <Button title={'Join the wait list!!!'} />
+          <S.ButtonContainer>
+            <S.ButtonWrapper>
+              <Button title={'Join us'} />
+            </S.ButtonWrapper>
+            <Button
+              styles={buttonStyles}
+              title={'Learn more'}
+              icon={
+                <S.IconWrapper>
+                  <ArrowSVG />
+                </S.IconWrapper>
+              }
+            />
+          </S.ButtonContainer>
         </S.Wrapper>
       </S.Container>
       {children}

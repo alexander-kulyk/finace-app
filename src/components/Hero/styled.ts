@@ -20,6 +20,41 @@ export const Wrapper = styled.div`
   justify-content: center;
 `;
 
+export const IconWrapper = styled.div`
+  margin-top: 5px;
+`;
+
+export const ButtonContainer = styled.div`
+  position: relative;
+`;
+
+export const ButtonWrapper = styled.div`
+  margin-bottom: 32px;
+  /* border-bottom-width: 1px; 
+  border-bottom-style: solid; 
+  border-image: linear-gradient(
+      to right,
+      ${(props) => props.theme.bgPrimary} 10%,
+      ${(props) => props.theme.bgSecondary},
+      ${(props) => props.theme.bgPrimary}
+    )
+    0.5;  */
+
+  &::before {
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    content: '';
+    width: 105px;
+    height: 1px;
+    background-image: radial-gradient(
+      at top,
+      ${(props) => props.theme.bgSecondary},
+      ${(props) => props.theme.bgPrimary}
+    );
+  }
+`;
+
 export const Title = styled.h1`
   font-family: 'Fira Sans';
   color: white;
