@@ -4,19 +4,21 @@ import React, { ReactNode } from 'react';
 import { ArrowSVG } from '../../assets/svg';
 import { Button } from '../Button';
 import * as S from './styled';
+import { Menu } from '../Menu';
 
 const buttonStyles = {
   border: 'none',
 };
 
 interface IProps {
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 export const Hero: React.FC<IProps> = ({ children }) => {
   return (
     <>
       <S.Container>
+        <Menu />
         <S.Wrapper>
           <S.Title>Unleash the power of intuitive finance</S.Title>
           <S.Paragraph>
