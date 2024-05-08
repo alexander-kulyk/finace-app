@@ -17,6 +17,8 @@ export const Button = styled.button.attrs(() => ({
 
   &:hover {
     cursor: pointer;
+    color: white;
+    box-shadow: 0px 5px 50px -15px rgba(94, 176, 239, 0.55);
   }
 `;
 

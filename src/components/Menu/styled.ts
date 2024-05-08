@@ -16,6 +16,8 @@ export const Logo = styled.div`
 
 export const NavigationWrapper = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 35px;
 `;
 
@@ -36,5 +38,18 @@ export const ButtonWrapper = styled.div`
       ${(props) => props.theme.bgSecondary},
       ${(props) => props.theme.bgPrimary}
     );
+  }
+`;
+
+export const NewsLink = styled.a`
+  color: ${(props) => props.theme.secondaryColor};
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  margin-right: 25px;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+    color: white;
   }
 `;

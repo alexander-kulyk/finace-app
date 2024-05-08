@@ -4,17 +4,14 @@ import React from 'react';
 import { Button } from '../Button';
 import * as S from './styled';
 
-const buttonStyles = {
-  border: 'none',
-  backgroundColor: 'transparent',
-};
-
 export const Menu = () => {
   return (
     <S.Navigation>
       <S.Logo>LOGO</S.Logo>
       <S.NavigationWrapper>
-        <Button styles={buttonStyles} title={'News'} />
+        <S.NewsLink href={'https://finance.yahoo.com/news/'} target='blank'>
+          {'News'}
+        </S.NewsLink>
         <S.ButtonContainer>
           <S.ButtonWrapper>
             <Button title={'Join us'} />
