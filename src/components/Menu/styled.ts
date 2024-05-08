@@ -9,7 +9,7 @@ export const Navigation = styled.nav`
 `;
 
 export const Logo = styled.div`
-  margin-left: 35px;
+  margin-left: 100px;
   color: white;
   margin-top: 0;
 `;
@@ -18,7 +18,7 @@ export const NavigationWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 35px;
+  margin-right: 100px;
 `;
 
 export const ButtonContainer = styled.div`
