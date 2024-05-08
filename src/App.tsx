@@ -1,10 +1,11 @@
 //components
-import { Main, Hero } from './components';
+import { Main, Hero, GeneralInformation } from './components';
 
 function App() {
   return (
     <Main>
       <Hero />
+      <GeneralInformation />
     </Main>
   );
 }
