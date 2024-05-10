@@ -5,4 +5,5 @@ export const theme: ITheme = {
   bgSecondary: '#5EB0EF',
   primaryColor: '#E4E4E7',
   secondaryColor: '#A1A1AA',
+  textColorPrimary: '#E4E4E7',
 };

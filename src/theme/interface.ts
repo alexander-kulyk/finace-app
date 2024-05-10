@@ -3,4 +3,5 @@ export interface ITheme {
   primaryColor: string;
   secondaryColor: string;
   bgSecondary: string;
+  textColorPrimary: string;
 }
