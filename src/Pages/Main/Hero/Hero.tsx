@@ -1,10 +1,10 @@
 //core
 import React, { ReactNode } from 'react';
 //components
-import { ArrowSVG } from '../../assets/svg';
-import { Button } from '../Button';
+import { ArrowSVG } from '../../../assets/svg';
+import { Button } from '../../../components';
+import { Menu } from './Menu';
 import * as S from './styled';
-import { Menu } from '../Menu';
 
 const buttonStyles = {
   border: 'none',

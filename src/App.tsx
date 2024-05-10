@@ -1,13 +1,8 @@
 //components
-import { Main, Hero, GeneralInformation } from './components';
+import { Main } from './Pages';
 
 function App() {
-  return (
-    <Main>
-      <Hero />
-      <GeneralInformation />
-    </Main>
-  );
+  return <Main />;
 }
 
 export default App;

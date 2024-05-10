@@ -1,7 +1,7 @@
 //core
 import React from 'react';
 //components
-import { Button } from '../Button';
+import { Button } from '../../../../components';
 import * as S from './styled';
 
 export const Menu = () => {
