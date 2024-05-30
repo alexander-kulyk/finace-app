@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/finace-app/static/js/main.8b8a04ff.js",
+    "main.js": "/finace-app/static/js/main.e136a5da.js",
     "static/js/453.41450b3a.chunk.js": "/finace-app/static/js/453.41450b3a.chunk.js",
     "static/media/insights.png": "/finace-app/static/media/insights.1c6a4a551632a37ba0a9.png",
     "index.html": "/finace-app/index.html",
-    "main.8b8a04ff.js.map": "/finace-app/static/js/main.8b8a04ff.js.map",
+    "main.e136a5da.js.map": "/finace-app/static/js/main.e136a5da.js.map",
     "453.41450b3a.chunk.js.map": "/finace-app/static/js/453.41450b3a.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.8b8a04ff.js"
+    "static/js/main.e136a5da.js"
   ]
 }
