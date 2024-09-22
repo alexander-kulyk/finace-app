@@ -5,6 +5,7 @@ export const Container = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 100px;
 `;
 
 export const Wrapper = styled.div`

@@ -31,6 +31,10 @@ export const LinkPages = styled(NavLink)`
     margin-top: 20px;
   }
 
+  &:hover {
+    color: white;
+  }
+
   &.active {
     border-radius: 5px;
     color: white;

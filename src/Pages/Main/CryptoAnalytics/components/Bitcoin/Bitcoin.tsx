@@ -2,17 +2,18 @@
 import React from 'react';
 // import axios from 'axios';
 import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
+  ResponsiveContainer,
   CartesianGrid,
+  ComposedChart,
   Tooltip,
   Legend,
-  ResponsiveContainer,
+  XAxis,
+  YAxis,
+  Line,
+  Bar,
 } from 'recharts';
 //components
-//import * as S from './styled';
+import { HeaderChart } from '../HeaderChart';
 //other
 //import img from '../../../../../assets/image/insights.png';
 
@@ -59,60 +60,57 @@ export const Bitcoin: React.FC = () => {
   const data = [
     {
       name: '2024',
-      uv: 62.79,
+      uv: 62790,
     },
     {
       name: '2023',
-      uv: 16.54,
+      uv: 16540,
     },
     {
       name: '2022',
-      uv: 46.319,
+      uv: 46319,
     },
     {
       name: '2021',
-      uv: 69.044,
+      uv: 69044,
+    },
+    {
+      name: '2020',
+      uv: 28768,
     },
     {
       name: '2019',
-      uv: 28.768,
+      uv: 7196,
     },
     {
       name: '2018',
-      uv: 7.196,
-    },
-    {
-      name: '2017',
-      uv: 3.742,
+      uv: 3742,
     },
   ];
 
   return (
-    <ResponsiveContainer width='100%' height='100%'>
-      <LineChart
-        width={500}
-        height={300}
-        data={data}
-        margin={{
-          top: 5,
-          right: 30,
-          left: 20,
-          bottom: 5,
-        }}
-      >
-        <CartesianGrid strokeDasharray='3 3' />
-        <XAxis dataKey='name' />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Line
-          type='monotone'
-          dataKey='pv'
-          stroke='#8884d8'
-          activeDot={{ r: 8 }}
-        />
-        <Line type='monotone' dataKey='uv' stroke='#82ca9d' />
-      </LineChart>
-    </ResponsiveContainer>
+    <HeaderChart>
+      <ResponsiveContainer width='100%' height='100%'>
+        <ComposedChart
+          width={500}
+          height={400}
+          data={data}
+          margin={{
+            top: 20,
+            right: 20,
+            bottom: 20,
+            left: 20,
+          }}
+        >
+          <CartesianGrid stroke='#f5f5f5' />
+          <XAxis dataKey='name' scale='band' />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Bar dataKey='uv' barSize={20} fill='#413ea0' />
+          <Line type='monotone' dataKey='uv' stroke='#ff7300' />
+        </ComposedChart>
+      </ResponsiveContainer>
+    </HeaderChart>
   );
 };

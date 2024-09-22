@@ -2,11 +2,28 @@ import { transparentize } from 'polished';
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+`;
+
+export const Wrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
 `;
 
 export const Cards = styled.div`
   width: 380px;
+  height: 480px;
+  background-color: '#18181B';
+  border-radius: 10px;
+  border: 1px solid
+    ${(props) => transparentize(0.7, props.theme.secondaryColor)};
+`;
+
+export const Cards_fifth = styled.div`
+  width: 490px;
   height: 480px;
   background-color: '#18181B';
   border-radius: 10px;

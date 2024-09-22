@@ -10,6 +10,7 @@ export const Navigation: React.FC = () => {
       <S.Menu>
         <S.LinkPages to='bitcoin'>Bitcoin</S.LinkPages>
         <S.LinkPages to='ethereum'>Ethereum</S.LinkPages>
+        <S.LinkPages to='tether'>Tether</S.LinkPages>
       </S.Menu>
       <Outlet />
     </S.Wrapper>
