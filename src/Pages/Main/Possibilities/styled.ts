@@ -8,13 +8,23 @@ export const Section = styled.section`
 `;
 
 export const Wrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 1200px;
 `;
 
 export const Cards = styled.div`
-  width: 380px;
+  width: min-content;
+  height: 480px;
+  background-color: '#18181B';
+  border-radius: 10px;
+  border: 1px solid
+    ${(props) => transparentize(0.7, props.theme.secondaryColor)};
+`;
+
+export const Cards_forth = styled.div`
+  width: 535px;
   height: 480px;
   background-color: '#18181B';
   border-radius: 10px;
@@ -29,6 +39,10 @@ export const Cards_fifth = styled.div`
   border-radius: 10px;
   border: 1px solid
     ${(props) => transparentize(0.7, props.theme.secondaryColor)};
+`;
+
+export const CardsWrapper = styled.div`
+  grid-column: 1 / 2;
 `;
 
 export const WrapperImage = styled.div`
