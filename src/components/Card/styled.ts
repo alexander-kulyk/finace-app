@@ -1,20 +1,7 @@
-import { transparentize } from 'polished';
 import styled from 'styled-components';
+import { transparentize } from 'polished';
 
-export const Section = styled.section`
-  display: flex;
-  justify-content: center;
-  margin-bottom: 100px;
-`;
-
-export const Wrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  width: 1200px;
-`;
-
-export const Cards = styled.div`
+export const Card = styled.div`
   width: min-content;
   height: 480px;
   background-color: '#18181B';
@@ -23,34 +10,12 @@ export const Cards = styled.div`
     ${(props) => transparentize(0.7, props.theme.secondaryColor)};
 `;
 
-export const Cards_forth = styled.div`
-  width: 535px;
-  height: 480px;
-  background-color: '#18181B';
-  border-radius: 10px;
-  border: 1px solid
-    ${(props) => transparentize(0.7, props.theme.secondaryColor)};
-`;
-
-export const Cards_fifth = styled.div`
-  width: 490px;
-  height: 480px;
-  background-color: '#18181B';
-  border-radius: 10px;
-  border: 1px solid
-    ${(props) => transparentize(0.7, props.theme.secondaryColor)};
-`;
-
-export const CardsWrapper = styled.div`
-  grid-column: 1 / 2;
-`;
+export const Image = styled.img``;
 
 export const WrapperImage = styled.div`
   background-image: url('../../../assets/image/insights_bg.png');
   background-size: cover;
 `;
-
-export const Image = styled.img``;
 
 export const WrapperText = styled.div``;
 

@@ -1,6 +1,7 @@
 //core
 import React from 'react';
 //components
+import { Card } from '../../../components';
 import * as S from './styled';
 //other
 import first_card from '../../../assets/image/insights.png';
@@ -13,18 +14,13 @@ export const Possibilities: React.FC = () => {
   return (
     <S.Section>
       <S.Wrapper>
-        <S.Cards>
-          <S.WrapperImage>
-            <S.Image src={`${first_card}`} />
-          </S.WrapperImage>
-          <S.WrapperText>
-            <S.Title>Insights at your fingertips</S.Title>
-            <S.Paragraph>
-              All your data and finances in one place to provide quick answers
-              and make decisions instantly.
-            </S.Paragraph>
-          </S.WrapperText>
-        </S.Cards>
+        <Card
+          image={first_card}
+          title={'Insights at your fingertips'}
+          paragraph={
+            'All your data and finances in one place to provide quick answers and make decisions instantly.'
+          }
+        />
         <S.Cards>
           <S.WrapperImage>
             <S.Image src={`${second_card}`} />

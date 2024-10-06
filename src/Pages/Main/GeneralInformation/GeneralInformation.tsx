@@ -16,7 +16,7 @@ export const GeneralInformation: React.FC = () => {
             empowering, and anything but boring. Our intuitive platform brings
             clarity to your cash flow, simplifies your financial
             decision-making, and puts the power of advanced financial management
-            right at your fingertips.{' '}
+            right at your fingertips.
             <S.Span>
               Say no to spreadsheets and tools designed in the 80s.
             </S.Span>

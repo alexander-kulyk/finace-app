@@ -4,6 +4,7 @@ import React from 'react';
 import { GeneralInformation } from './GeneralInformation';
 import { CryptoAnalytics } from './CryptoAnalytics';
 import { Possibilities } from './Possibilities';
+import { MeetGenius } from './MeetGenius';
 import { Hero } from './Hero';
 import * as S from './styled';
 
@@ -14,6 +15,7 @@ export const Main: React.FC = () => {
       <CryptoAnalytics />
       <GeneralInformation />
       <Possibilities />
+      <MeetGenius />
     </S.Main>
   );
 };
