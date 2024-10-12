@@ -1,9 +1,25 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
+  position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 160px;
+
+  &::after {
+    position: absolute;
+    bottom: -99px;
+    left: 915px;
+    content: '';
+    width: 105px;
+    height: 1px;
+    background-image: radial-gradient(
+      at top,
+      ${(props) => props.theme.bgSecondary},
+      ${(props) => props.theme.bgPrimary}
+    );
+  }
 `;
 
 export const WrapperTitle = styled.div`
