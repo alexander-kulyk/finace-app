@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import lightImage from '../../../assets/image/light.png';
 
 export const Section = styled.section`
   position: relative;
@@ -9,16 +10,13 @@ export const Section = styled.section`
 
   &::after {
     position: absolute;
-    bottom: -99px;
-    left: 915px;
+    bottom: -164px;
+    left: 556px;
     content: '';
-    width: 105px;
-    height: 1px;
-    background-image: radial-gradient(
-      at top,
-      ${(props) => props.theme.bgSecondary},
-      ${(props) => props.theme.bgPrimary}
-    );
+    background-image: url(${lightImage});
+    width: 500px;
+    height: 3px;
+    background-size: contain;
   }
 `;
 
