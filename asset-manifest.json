@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.js": "/finace-app/static/js/main.4ffcd21d.js",
+    "main.js": "/finace-app/static/js/main.5f305bb4.js",
     "static/js/453.01341198.chunk.js": "/finace-app/static/js/453.01341198.chunk.js",
+    "static/media/632.png": "/finace-app/static/media/632.5d2ea988c3845cb3b961.png",
+    "static/media/SmartForecasting.png": "/finace-app/static/media/SmartForecasting.162e00b97411d2a229bb.png",
+    "static/media/fourth.png": "/finace-app/static/media/fourth.e543b1c38a36b277d72d.png",
     "static/media/third_card.png": "/finace-app/static/media/third_card.e37c2b20f649891df871.png",
     "static/media/second_card.png": "/finace-app/static/media/second_card.a11331ae717963f462fc.png",
+    "static/media/fifth.png": "/finace-app/static/media/fifth.9dcf5f2bcbfdb876e569.png",
     "static/media/insights.png": "/finace-app/static/media/insights.1c6a4a551632a37ba0a9.png",
+    "static/media/ChatWithGenius.png": "/finace-app/static/media/ChatWithGenius.fad8cd8607098a08bb86.png",
     "index.html": "/finace-app/index.html",
-    "main.4ffcd21d.js.map": "/finace-app/static/js/main.4ffcd21d.js.map",
+    "main.5f305bb4.js.map": "/finace-app/static/js/main.5f305bb4.js.map",
     "453.01341198.chunk.js.map": "/finace-app/static/js/453.01341198.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.4ffcd21d.js"
+    "static/js/main.5f305bb4.js"
   ]
 }
