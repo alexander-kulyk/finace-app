@@ -4,7 +4,7 @@ import { transparentize } from 'polished';
 export const Card = styled.div`
   width: min-content;
   height: 480px;
-  background-color: '#18181B';
+  background-color: ${transparentize(0.5, '#18181b')};
   border-radius: 10px;
   border: 1px solid
     ${(props) => transparentize(0.7, props.theme.secondaryColor)};
@@ -17,7 +17,9 @@ export const WrapperImage = styled.div`
   background-size: cover;
 `;
 
-export const WrapperText = styled.div``;
+export const WrapperText = styled.div`
+  margin-left: 30px;
+`;
 
 export const Title = styled.h3`
   font-family: 'Fira Sans';

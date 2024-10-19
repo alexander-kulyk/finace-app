@@ -8,14 +8,14 @@ import ChatWithGenius from '../../../assets/image/ChatWithGenius.png';
 export const MeetGenius: React.FC = () => {
   return (
     <S.Section>
-      <S.WrapperTitle>
-        <S.Title>{'Meet Genius'}</S.Title>
-        <S.Paragraph>
-          Our AI-driven assistant is designed to decode complex financial
-          figures and <S.Span>illuminate key trends</S.Span> in your business.
-        </S.Paragraph>
-      </S.WrapperTitle>
-      <S.CardsWrapper>
+      <S.Wrapper>
+        <S.WrapperTitle>
+          <S.Title>{'Meet Genius'}</S.Title>
+          <S.Paragraph>
+            Our AI-driven assistant is designed to decode complex financial
+            figures and <S.Span>illuminate key trends</S.Span> in your business.
+          </S.Paragraph>
+        </S.WrapperTitle>
         <Card
           image={SmartForecasting}
           title={'Smart forecasting'}
@@ -30,7 +30,7 @@ export const MeetGenius: React.FC = () => {
             'Just ask. With Genius by your side, navigating the financial maze becomes intuitive and effortless..'
           }
         />
-      </S.CardsWrapper>
+      </S.Wrapper>
     </S.Section>
   );
 };

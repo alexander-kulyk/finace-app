@@ -21,6 +21,7 @@ export const Section = styled.section`
 `;
 
 export const WrapperTitle = styled.div`
+  grid-column: 1 / 3;
   margin-bottom: 60px;
 `;
 
@@ -59,9 +60,10 @@ export const Span = styled.span`
   text-align: start;
 `;
 
-export const CardsWrapper = styled.div`
-  display: flex;
-  :first-child {
-    margin-right: 10px;
+export const Wrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  & > :last-child {
+    margin-left: 10px;
   }
 `;

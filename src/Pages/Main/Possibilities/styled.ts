@@ -4,14 +4,14 @@ import styled from 'styled-components';
 export const Section = styled.section`
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 `;
 
 export const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  width: 1200px;
+  gap: 30px;
+  width: 1230px;
 `;
 
 export const Cards = styled.div`

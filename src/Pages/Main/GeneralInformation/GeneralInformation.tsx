@@ -25,7 +25,7 @@ export const GeneralInformation: React.FC = () => {
         <S.SecondaryContainer>
           <S.Title>{'Everything you need. Nothing you don’t'}</S.Title>
           <S.Paragraph>
-            Financial management and visibility in one place. Experience{' '}
+            Financial management and visibility in one place. Experience
             <S.Span>a flexible toolkit</S.Span> that makes every task feel like
             a breeze.'
           </S.Paragraph>

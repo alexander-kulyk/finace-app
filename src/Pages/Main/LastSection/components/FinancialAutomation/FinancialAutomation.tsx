@@ -2,6 +2,14 @@ import { Button } from '../../../../../components';
 import * as S from './styled';
 
 export const FinancialAutomation: React.FC = () => {
+  const onClickJoinUs = () => {
+    window.open(
+      'https://accounts.binance.com/en/register/business?return_to=aHR0cHM6Ly93d3cuYmluYW5jZS5jb20vZW4vY3J5cHRvL2J1eQ%3D%3D',
+      '_blank',
+      'noopener,noreferrer'
+    );
+  };
+
   return (
     <S.Wrapper>
       <S.WrapperTitle>
@@ -16,7 +24,7 @@ export const FinancialAutomation: React.FC = () => {
       </S.Paragraph>
       <S.ButtonContainer>
         <S.ButtonWrapper>
-          <Button title={'Join us'} />
+          <Button onClick={onClickJoinUs} title={'Join us'} />
         </S.ButtonWrapper>
       </S.ButtonContainer>
     </S.Wrapper>

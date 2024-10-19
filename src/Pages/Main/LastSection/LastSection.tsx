@@ -1,7 +1,7 @@
 //component
-import * as S from './styled';
 import { FinancialAutomation } from './components';
 import { Footer } from './components/Footer';
+import * as S from './styled';
 
 export const LastSection: React.FC = () => {
   return (

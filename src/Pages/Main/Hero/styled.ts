@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
   background: radial-gradient(
     circle at top,
-    ${(props) => props.theme.bgSecondary} -90%,
-    ${(props) => props.theme.bgPrimary} 50%
+    ${(props) => props.theme.bgSecondary} -60%,
+    ${(props) => props.theme.bgPrimary} 37%
   );
 `;
 
@@ -56,11 +57,13 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const Title = styled.h1`
+  margin-top: 0;
+  margin-bottom: 25px;
   font-family: 'Fira Sans';
   color: white;
   text-align: center;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 50px;
   background-image: linear-gradient(
     90deg,
     #ffffff,
@@ -74,6 +77,8 @@ export const Title = styled.h1`
 `;
 
 export const Paragraph = styled.p`
+  margin-top: 0;
+  margin-bottom: 40px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
