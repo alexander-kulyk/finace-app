@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/finace-app/static/js/main.052ecb6b.js",
+    "main.js": "/finace-app/static/js/main.f28aba7a.js",
     "static/js/453.01341198.chunk.js": "/finace-app/static/js/453.01341198.chunk.js",
     "static/media/632.png": "/finace-app/static/media/632.5d2ea988c3845cb3b961.png",
     "static/media/SmartForecasting.png": "/finace-app/static/media/SmartForecasting.162e00b97411d2a229bb.png",
@@ -11,10 +11,10 @@
     "static/media/insights.png": "/finace-app/static/media/insights.1c6a4a551632a37ba0a9.png",
     "static/media/ChatWithGenius.png": "/finace-app/static/media/ChatWithGenius.fad8cd8607098a08bb86.png",
     "index.html": "/finace-app/index.html",
-    "main.052ecb6b.js.map": "/finace-app/static/js/main.052ecb6b.js.map",
+    "main.f28aba7a.js.map": "/finace-app/static/js/main.f28aba7a.js.map",
     "453.01341198.chunk.js.map": "/finace-app/static/js/453.01341198.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.052ecb6b.js"
+    "static/js/main.f28aba7a.js"
   ]
 }
