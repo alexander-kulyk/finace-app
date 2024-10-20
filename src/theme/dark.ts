@@ -6,4 +6,7 @@ export const theme: ITheme = {
   primaryColor: '#E4E4E7',
   secondaryColor: '#A1A1AA',
   textColorPrimary: '#E4E4E7',
+  fontStylePrimary: 'Fira Sans',
+  fontStyleSecondary:
+    'system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;',
 };

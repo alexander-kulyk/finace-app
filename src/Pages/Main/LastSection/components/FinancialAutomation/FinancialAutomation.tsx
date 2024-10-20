@@ -1,5 +1,10 @@
-import { Button } from '../../../../../components';
+//components
+import { Button, Title, Paragraph } from '../../../../../components';
 import * as S from './styled';
+
+const titleStyles = {
+  fontSize: 30,
+};
 
 export const FinancialAutomation: React.FC = () => {
   const onClickJoinUs = () => {
@@ -13,15 +18,16 @@ export const FinancialAutomation: React.FC = () => {
   return (
     <S.Wrapper>
       <S.WrapperTitle>
-        <S.Title>
-          {'See where financial automation can take your business.'}
-        </S.Title>
+        <Title
+          text={'See where financial automation can take your business.'}
+          styles={titleStyles}
+        />
       </S.WrapperTitle>
-      <S.Paragraph>
-        {
+      <Paragraph
+        text={
           'The first financial tool you will love. And the last one you will ever need.'
         }
-      </S.Paragraph>
+      />
       <S.ButtonContainer>
         <S.ButtonWrapper>
           <Button onClick={onClickJoinUs} title={'Join us'} />

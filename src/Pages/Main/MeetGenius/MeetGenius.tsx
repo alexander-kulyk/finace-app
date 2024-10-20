@@ -1,16 +1,24 @@
+//core
+import { CSSProperties } from 'react';
 //components
-import { Card } from '../../../components';
+import { Card, Title } from '../../../components';
 import * as S from './styled';
 //other
 import SmartForecasting from '../../../assets/image/SmartForecasting.png';
 import ChatWithGenius from '../../../assets/image/ChatWithGenius.png';
+
+const styles: { [key: string]: CSSProperties } = {
+  title: {
+    textAlign: 'start',
+  },
+};
 
 export const MeetGenius: React.FC = () => {
   return (
     <S.Section>
       <S.Wrapper>
         <S.WrapperTitle>
-          <S.Title>{'Meet Genius'}</S.Title>
+          <Title text={'Meet Genius'} styles={styles.title} />
           <S.Paragraph>
             Our AI-driven assistant is designed to decode complex financial
             figures and <S.Span>illuminate key trends</S.Span> in your business.

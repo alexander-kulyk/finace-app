@@ -4,4 +4,6 @@ export interface ITheme {
   secondaryColor: string;
   bgSecondary: string;
   textColorPrimary: string;
+  fontStylePrimary: string;
+  fontStyleSecondary: string;
 }

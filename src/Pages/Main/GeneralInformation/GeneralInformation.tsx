@@ -1,14 +1,24 @@
 //core
-import React from 'react';
+import React, { CSSProperties } from 'react';
 //components
+import { Title } from '../../../components';
 import * as S from './styled';
+
+const styles: { [key: string]: CSSProperties } = {
+  title: {
+    textAlign: 'start',
+  },
+};
 
 export const GeneralInformation: React.FC = () => {
   return (
     <S.Container>
       <S.Wrapper>
         <S.SecondaryContainer>
-          <S.Title>{'Who said finance has to be boring?'} </S.Title>
+          <Title
+            text={'Who said finance has to be boring?'}
+            styles={styles.title}
+          />
         </S.SecondaryContainer>
         <S.SecondaryContainer>
           <S.Paragraph>
@@ -23,10 +33,13 @@ export const GeneralInformation: React.FC = () => {
           </S.Paragraph>
         </S.SecondaryContainer>
         <S.SecondaryContainer>
-          <S.Title>{'Everything you need. Nothing you don’t'}</S.Title>
+          <Title
+            text={'Everything you need. Nothing you don’t'}
+            styles={styles.title}
+          />
           <S.Paragraph>
             Financial management and visibility in one place. Experience
-            <S.Span>a flexible toolkit</S.Span> that makes every task feel like
+            <S.Span> a flexible toolkit</S.Span> that makes every task feel like
             a breeze.'
           </S.Paragraph>
         </S.SecondaryContainer>
