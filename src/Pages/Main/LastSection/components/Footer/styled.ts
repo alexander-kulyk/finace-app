@@ -36,4 +36,14 @@ export const Paragraph = styled.p`
   text-align: start;
 `;
 
-export const WrapperSocialMedia = styled.div``;
+export const WrapperSocialMedia = styled.div`
+  display: flex;
+  > *:not(:last-child) {
+    margin-right: 30px;
+  }
+  > *:hover {
+    cursor: pointer;
+  }
+`;
+
+export const WrapperIcon = styled.div``;

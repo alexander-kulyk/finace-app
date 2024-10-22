@@ -9,9 +9,8 @@ export const Section = styled.section`
   margin-bottom: 160px;
 
   &::after {
-    position: absolute;
+    position: relative;
     bottom: -164px;
-    left: 556px;
     content: '';
     background-image: url(${lightImage});
     width: 500px;

@@ -1,9 +1,16 @@
+//core
+import { CSSProperties } from 'styled-components';
 //components
 import { Button, Title, Paragraph } from '../../../../../components';
 import * as S from './styled';
 
-const titleStyles = {
-  fontSize: 30,
+const styles: { [key: string]: CSSProperties } = {
+  title: {
+    fontSize: 30,
+  },
+  paragraph: {
+    marginBottom: 40,
+  },
 };
 
 export const FinancialAutomation: React.FC = () => {
@@ -20,13 +27,14 @@ export const FinancialAutomation: React.FC = () => {
       <S.WrapperTitle>
         <Title
           text={'See where financial automation can take your business.'}
-          styles={titleStyles}
+          styles={styles.title}
         />
       </S.WrapperTitle>
       <Paragraph
         text={
           'The first financial tool you will love. And the last one you will ever need.'
         }
+        styles={styles.paragraph}
       />
       <S.ButtonContainer>
         <S.ButtonWrapper>
