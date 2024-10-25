@@ -13,6 +13,13 @@ const styles: { [key: string]: CSSProperties } = {
   },
 };
 
+const cardStyles = {
+  title: {
+    fontSize: 20,
+    textAlign: 'start' as CSSProperties['textAlign'],
+  },
+};
+
 export const MeetGenius: React.FC = () => {
   return (
     <S.Section>
@@ -25,6 +32,7 @@ export const MeetGenius: React.FC = () => {
           </S.Paragraph>
         </S.WrapperTitle>
         <Card
+          styles={cardStyles}
           image={SmartForecasting}
           title={'Smart forecasting'}
           paragraph={
@@ -32,6 +40,7 @@ export const MeetGenius: React.FC = () => {
           }
         />
         <Card
+          styles={cardStyles}
           image={ChatWithGenius}
           title={'Chat with Genius'}
           paragraph={

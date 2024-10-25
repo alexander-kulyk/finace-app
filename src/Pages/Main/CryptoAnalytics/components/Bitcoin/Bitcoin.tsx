@@ -25,8 +25,8 @@ export const Bitcoin: React.FC = () => {
   //       'https://api.coingecko.com/api/v3/coins/bitcoin/market_chart',
   //       {
   //         params: {
-  //           vs_currency: 'usd', // Валюта, в якій будуть відображатися дані
-  //           year: 7, // Останні 7 днів
+  //           vs_currency: 'usd',
+  //           year: 7,
   //         },
   //       }
   //     );

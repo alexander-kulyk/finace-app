@@ -1,20 +1,28 @@
 //core
-import React from 'react';
+import React, { CSSProperties } from 'react';
 //components
 import { Card } from '../../../components';
 import * as S from './styled';
 //other
-import firstCard from '../../../assets/image/insights.png';
 import secondCard from '../../../assets/image/second_card.png';
 import thirdCard from '../../../assets/image/third_card.png';
+import firstCard from '../../../assets/image/insights.png';
 import fourthCard from '../../../assets/image/fourth.png';
 import fifthCard from '../../../assets/image/fifth.png';
+
+const styles = {
+  title: {
+    fontSize: 20,
+    textAlign: 'start' as CSSProperties['textAlign'],
+  },
+};
 
 export const Possibilities: React.FC = () => {
   return (
     <S.Section>
       <S.Wrapper>
         <Card
+          styles={styles}
           image={firstCard}
           title={'Insights at your fingertips'}
           paragraph={
@@ -22,6 +30,7 @@ export const Possibilities: React.FC = () => {
           }
         />
         <Card
+          styles={styles}
           image={secondCard}
           title={'Manage in real time'}
           paragraph={
@@ -29,20 +38,25 @@ export const Possibilities: React.FC = () => {
           }
         />
         <Card
+          styles={styles}
           image={thirdCard}
           title={'Important business alerts'}
           paragraph={
             'Choose the alerts you need and receive them via email, mobile or Slack. Review and take action in one click.'
           }
         />
+        <S.WrapperCard>
+          <Card
+            styles={styles}
+            image={fourthCard}
+            title={'Important business alerts'}
+            paragraph={
+              ' Choose the alerts you need and receive them via email, mobile or Slack. Review and take action in one click.'
+            }
+          />
+        </S.WrapperCard>
         <Card
-          image={fourthCard}
-          title={'Important business alerts'}
-          paragraph={
-            ' Choose the alerts you need and receive them via email, mobile or Slack. Review and take action in one click.'
-          }
-        />
-        <Card
+          styles={styles}
           image={fifthCard}
           title={'You’re in control'}
           paragraph={

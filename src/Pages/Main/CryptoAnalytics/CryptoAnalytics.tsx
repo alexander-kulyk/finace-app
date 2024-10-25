@@ -1,5 +1,5 @@
 //core
-import React, { MutableRefObject, RefObject } from 'react';
+import React, { MutableRefObject } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 //components
 import { CryptoArea } from './components';

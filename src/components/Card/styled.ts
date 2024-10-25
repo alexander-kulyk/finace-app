@@ -3,7 +3,7 @@ import { transparentize } from 'polished';
 
 export const Card = styled.div`
   width: min-content;
-  height: 480px;
+  height: auto;
   background-color: ${transparentize(0.5, '#18181b')};
   border-radius: 10px;
   border: 1px solid

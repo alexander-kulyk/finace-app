@@ -5,7 +5,7 @@ export const Container = styled.div`
   width: 1250px;
   padding-top: 20px;
   margin-bottom: 100px;
-  border-top: 1px solid white;
+  border-top: 1px solid ${() => transparentize(0.9, '#FFFFFF')};
 `;
 
 export const Wrapper = styled.div`
