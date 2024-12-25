@@ -14,7 +14,7 @@ export const Menu = () => {
 
   return (
     <S.Navigation>
-      <S.Logo>
+      <S.Logo href='/finace-app'>
         <LogoSVG />
       </S.Logo>
       <S.NavigationWrapper>
