@@ -31,19 +31,16 @@ export const Paragraph = styled.p`
   -webkit-box-orient: vertical;
   overflow: hidden;
   color: ${(props) => transparentize(0.8, props.theme.secondaryColor)};
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  text-align: start;
 `;
 
 export const WrapperSocialMedia = styled.div`
   display: flex;
-  > *:not(:last-child) {
-    margin-right: 30px;
-  }
+
   > *:hover {
     cursor: pointer;
   }
 `;
 
-export const WrapperIcon = styled.div``;
+export const WrapperIcon = styled.div`
+  padding: 10px;
+`;
