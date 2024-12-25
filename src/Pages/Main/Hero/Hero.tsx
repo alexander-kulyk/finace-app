@@ -1,5 +1,5 @@
 //core
-import React, { CSSProperties, ReactNode } from 'react';
+import React, { CSSProperties, ReactNode, useState } from 'react';
 //components
 import { Button, Title, Paragraph } from '../../../components';
 import { ArrowSVG } from '../../../assets/svg';
@@ -35,6 +35,8 @@ export const Hero: React.FC<IProps> = ({ children }) => {
     );
   };
 
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <>
       <S.Container>
@@ -57,8 +59,11 @@ export const Hero: React.FC<IProps> = ({ children }) => {
             </S.ButtonWrapper>
             <S.Link href='#cryptoAnalytics'>
               <Paragraph text={'Learn more'} />
-              <S.IconWrapper>
-                <ArrowSVG />
+              <S.IconWrapper
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+              >
+                <ArrowSVG isHovered={isHovered} />
               </S.IconWrapper>
             </S.Link>
           </S.ButtonContainer>

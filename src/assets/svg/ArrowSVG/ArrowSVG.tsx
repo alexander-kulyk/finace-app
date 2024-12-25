@@ -1,4 +1,8 @@
-export const ArrowSVG = () => {
+interface ArrowSVGProps {
+  isHovered: boolean;
+}
+
+export const ArrowSVG = ({ isHovered }: ArrowSVGProps) => {
   return (
     <svg
       width='19'
@@ -9,14 +13,14 @@ export const ArrowSVG = () => {
     >
       <path
         d='M9.48438 3.8125V14.3125'
-        stroke='#A1A1AA'
+        stroke={isHovered ? '#FFFFFF' : '#A1A1AA'}
         stroke-width='1.125'
         stroke-linecap='round'
         stroke-linejoin='round'
       />
       <path
         d='M14.7344 9.0625L9.48438 14.3125L4.23438 9.0625'
-        stroke='#A1A1AA'
+        stroke={isHovered ? '#FFFFFF' : '#A1A1AA'}
         stroke-width='1.125'
         stroke-linecap='round'
         stroke-linejoin='round'
