@@ -23,7 +23,7 @@ html {
   /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
   html {
-    line-height: 1.15; /* 1 */
+    line-height: 1.4; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
   }
 
