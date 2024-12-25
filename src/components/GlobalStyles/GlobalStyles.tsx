@@ -1,40 +1,19 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
-  @font-face {
-    font-family: 'SF UI Display';
-    src: local('SF UI Display'),
-      url('./assets/fonts/SFUIDisplay/SFUIDisplay-Bold.eot') format('embedded-opentype'),
-      url('./assets/fonts/SFUIDisplay/SFUIDisplay-Bold.woff2') format('woff2'),
-      url('./assets/fonts/SFUIDisplay/SFUIDisplay-Bold.woff') format('woff'),
-      url('./assets/fonts/SFUIDisplay/SFUIDisplay-Bold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-  }
 
-  @media not all and (min-resolution: 0.001dpcm) {
-    @supports (-webkit-appearance: none) {
-      @font-face {
-        font-family: 'SF Pro Display';
-        src: local('SF Pro Display'),
-          url('./assets/fonts/SFPro/SFProDisplay-Bold.otf') format('opentype'),
-          url('./assets/fonts/SFPro/SFProDisplay-Bold.ttf') format('truetype');
-      }
-    }
-  }
 
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-      'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-family: Fira Sans
   }
 
-  @media not all and (min-resolution: 0.001dpcm) {
-    @supports (-webkit-appearance: none) {
-      body {
-        font-family: 'SF Pro Display', sans-serif;
-      }
-    }
+  p, button{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
   }
+
+html {
+            scroll-behavior: smooth;
+        }
 
   * {
     box-sizing: border-box;

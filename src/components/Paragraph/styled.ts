@@ -6,6 +6,5 @@ export const Paragraph = styled.p`
   -webkit-box-orient: vertical;
   overflow: hidden;
   color: ${(props) => props.theme.secondaryColor};
-  font-family: ${(props) => props.theme.fontStyleSecondary};
   text-align: start;
 `;

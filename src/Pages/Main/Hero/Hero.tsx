@@ -24,14 +24,9 @@ const styles: { [key: string]: CSSProperties } = {
 
 interface IProps {
   children?: ReactNode;
-  sectionRef: any;
 }
 
-export const Hero: React.FC<IProps> = ({ children, sectionRef }) => {
-  const onClickLearMore = () => {
-    sectionRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
-
+export const Hero: React.FC<IProps> = ({ children }) => {
   const onClickJoinUs = () => {
     window.open(
       'https://accounts.binance.com/en/register/business?return_to=aHR0cHM6Ly93d3cuYmluYW5jZS5jb20vZW4vY3J5cHRvL2J1eQ%3D%3D',
@@ -60,16 +55,12 @@ export const Hero: React.FC<IProps> = ({ children, sectionRef }) => {
             <S.ButtonWrapper>
               <Button onClick={onClickJoinUs} title={'Join us'} />
             </S.ButtonWrapper>
-            <Button
-              onClick={onClickLearMore}
-              styles={styles.button}
-              title={'Learn more'}
-              icon={
-                <S.IconWrapper>
-                  <ArrowSVG />
-                </S.IconWrapper>
-              }
-            />
+            <S.Link href='#cryptoAnalytics'>
+              <Paragraph text={'Learn more'} />
+              <S.IconWrapper>
+                <ArrowSVG />
+              </S.IconWrapper>
+            </S.Link>
           </S.ButtonContainer>
         </S.Wrapper>
       </S.Container>

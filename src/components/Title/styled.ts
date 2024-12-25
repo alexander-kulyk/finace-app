@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Title = styled.h2`
-  font-family: ${(props) => props.theme.fontStylePrimary};
   color: ${(props) => props.theme.textColorPrimary};
   text-align: center;
   font-weight: 700;

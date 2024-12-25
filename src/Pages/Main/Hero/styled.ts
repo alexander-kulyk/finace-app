@@ -21,6 +21,12 @@ export const Wrapper = styled.div`
   justify-content: center;
 `;
 
+export const Link = styled.a`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 export const IconWrapper = styled.div`
   margin-top: 5px;
 `;

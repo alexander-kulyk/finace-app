@@ -1,5 +1,5 @@
 //core
-import React, { useRef } from 'react';
+import React from 'react';
 //components
 import { GeneralInformation } from './GeneralInformation';
 import { CryptoAnalytics } from './CryptoAnalytics';
@@ -10,12 +10,11 @@ import { Hero } from './Hero';
 import * as S from './styled';
 
 export const Main: React.FC = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
   return (
     <S.Main>
-      <Hero sectionRef={sectionRef} />
+      <Hero />
       {/* @ts-ignore */}
-      <CryptoAnalytics sectionRef={sectionRef} />
+      <CryptoAnalytics />
       <GeneralInformation />
       <Possibilities />
       <MeetGenius />
