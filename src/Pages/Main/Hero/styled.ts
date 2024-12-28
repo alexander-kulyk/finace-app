@@ -27,12 +27,11 @@ export const IconWrapper = styled.div`
   margin-top: 5px;
 `;
 
-export const ButtonContainer = styled.div`
-  position: relative;
-`;
+export const ButtonContainer = styled.div``;
 
 export const ButtonWrapper = styled.div`
   margin-bottom: 32px;
+  position: relative;
   /* border-bottom-width: 1px; 
   border-bottom-style: solid; 
   border-image: linear-gradient(

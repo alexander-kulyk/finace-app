@@ -18,6 +18,7 @@ export const NavigationWrapper = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
 `;
 
 export const ButtonContainer = styled.div`
