@@ -3,9 +3,6 @@ import lightImage from '../../../assets/image/light.png';
 
 export const Section = styled.section`
   position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   margin-bottom: 160px;
 
   &::after {

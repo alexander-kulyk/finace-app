@@ -5,7 +5,7 @@ import * as S from './styled';
 
 export const LastSection: React.FC = () => {
   return (
-    <S.Section>
+    <S.Section className='container'>
       <FinancialAutomation />
       <Footer />
     </S.Section>

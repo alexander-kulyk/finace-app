@@ -22,7 +22,7 @@ const cardStyles = {
 
 export const MeetGenius: React.FC = () => {
   return (
-    <S.Section>
+    <S.Section className='container'>
       <S.Wrapper>
         <S.WrapperTitle>
           <Title text={'Meet Genius'} styles={styles.title} />

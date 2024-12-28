@@ -12,7 +12,7 @@ const styles: { [key: string]: CSSProperties } = {
 
 export const GeneralInformation: React.FC = () => {
   return (
-    <S.Container>
+    <S.Container className='container'>
       <S.Wrapper>
         <S.SecondaryContainer>
           <Title

@@ -39,7 +39,7 @@ export const Hero: React.FC<IProps> = ({ children }) => {
 
   return (
     <>
-      <S.Container>
+      <S.Container className='container'>
         <Menu />
         <S.Wrapper>
           <Title

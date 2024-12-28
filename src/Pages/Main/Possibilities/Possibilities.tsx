@@ -19,7 +19,7 @@ const styles = {
 
 export const Possibilities: React.FC = () => {
   return (
-    <S.Section>
+    <S.Section className='container'>
       <S.Wrapper>
         <Card
           styles={styles}

@@ -6,7 +6,7 @@ import * as S from './styled';
 
 export const CryptoAnalytics: React.FC = () => {
   return (
-    <S.Container id='cryptoAnalytics'>
+    <S.Container id='cryptoAnalytics' className='container'>
       <BrowserRouter basename='finace-app'>
         <CryptoArea />
       </BrowserRouter>

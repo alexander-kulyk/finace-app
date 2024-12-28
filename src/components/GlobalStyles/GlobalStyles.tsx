@@ -20,6 +20,14 @@ html {
     text-decoration: none;
   }
 
+  .container{
+    padding: 0 20px;
+      display: flex;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
   /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
   html {
