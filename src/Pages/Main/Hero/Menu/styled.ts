@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Navigation = styled.nav`
+export const Navigation = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,7 +14,7 @@ export const Logo = styled.a`
   margin-top: 0;
 `;
 
-export const NavigationWrapper = styled.div`
+export const NavigationWrapper = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
