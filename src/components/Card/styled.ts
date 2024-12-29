@@ -5,9 +5,13 @@ export const Card = styled.div`
   width: min-content;
   height: auto;
   background-color: ${transparentize(0.5, '#18181b')};
-  border-radius: 10px;
+  border-radius: 16px;
   border: 1px solid
-    ${(props) => transparentize(0.7, props.theme.secondaryColor)};
+    ${(props) => transparentize(0.9, props.theme.secondaryColor)};
+`;
+
+export const ImageWrapper = styled.div`
+  width: 100%;
 `;
 
 export const Image = styled.img``;
@@ -18,7 +22,7 @@ export const WrapperImage = styled.div`
 `;
 
 export const WrapperText = styled.div`
-  margin-left: 30px;
+  padding: 2rem;
 `;
 
 export const Title = styled.h3`

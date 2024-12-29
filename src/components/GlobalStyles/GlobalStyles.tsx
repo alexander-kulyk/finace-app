@@ -26,6 +26,7 @@ html {
    flex-direction: column;
   justify-content: center;
   align-items: center;
+
   }
 
   /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

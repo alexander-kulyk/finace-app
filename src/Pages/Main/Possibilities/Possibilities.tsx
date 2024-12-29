@@ -1,7 +1,7 @@
 //core
 import React, { CSSProperties } from 'react';
 //components
-import { Card } from '../../../components';
+import { Card, Title } from '../../../components';
 import * as S from './styled';
 //other
 import secondCard from '../../../assets/image/second_card.png';
@@ -21,6 +21,15 @@ export const Possibilities: React.FC = () => {
   return (
     <S.Section className='container'>
       <S.Wrapper>
+        {/* <S.TextWrapper>
+          <Title text={'Everything you need. Nothing you don’t'} />
+          <S.Paragraph>
+            Financial management and visibility in one place. Experience
+            <S.Span> a flexible toolkit</S.Span> that makes every task feel like
+            a breeze.'
+          </S.Paragraph>
+        </S.TextWrapper> */}
+
         <Card
           styles={styles}
           image={firstCard}

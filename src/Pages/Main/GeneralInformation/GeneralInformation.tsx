@@ -32,17 +32,6 @@ export const GeneralInformation: React.FC = () => {
             </S.Span>
           </S.Paragraph>
         </S.SecondaryContainer>
-        <S.SecondaryContainer>
-          <Title
-            text={'Everything you need. Nothing you don’t'}
-            styles={styles.title}
-          />
-          <S.Paragraph>
-            Financial management and visibility in one place. Experience
-            <S.Span> a flexible toolkit</S.Span> that makes every task feel like
-            a breeze.'
-          </S.Paragraph>
-        </S.SecondaryContainer>
       </S.Wrapper>
     </S.Container>
   );

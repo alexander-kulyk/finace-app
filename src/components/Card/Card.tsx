@@ -17,10 +17,11 @@ interface IProps {
 }
 
 export const Card: React.FC<IProps> = ({ image, title, paragraph, styles }) => {
-  console.log('styles?.title', styles?.title);
   return (
     <S.Card style={styles?.card}>
-      <S.Image style={styles?.image} src={`${image}`} />
+      <S.ImageWrapper>
+        <S.Image style={styles?.image} src={`${image}`} />
+      </S.ImageWrapper>
       <S.WrapperText>
         <Title text={title} styles={styles?.title} />
         <Paragraph text={paragraph} />
