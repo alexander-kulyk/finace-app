@@ -3,7 +3,6 @@ import lightImage from '../../../assets/image/light.png';
 
 export const Section = styled.section`
   position: relative;
-  margin-bottom: 160px;
 
   &::after {
     position: relative;

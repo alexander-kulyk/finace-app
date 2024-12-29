@@ -21,7 +21,7 @@ html {
   }
 
   .container{
-    padding: 0 20px;
+    padding: 96px 20px;
       display: flex;
    flex-direction: column;
   justify-content: center;

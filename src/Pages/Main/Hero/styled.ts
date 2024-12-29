@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  margin-bottom: 100px;
+  padding-top: 0;
   background: radial-gradient(
     circle at top,
     ${(props) => props.theme.bgSecondary} -60%,

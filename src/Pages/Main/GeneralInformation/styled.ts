@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.section`
-  margin-bottom: 65px;
-`;
+export const Container = styled.section``;
 
 export const SecondaryContainer = styled.div`
   width: 533px;
