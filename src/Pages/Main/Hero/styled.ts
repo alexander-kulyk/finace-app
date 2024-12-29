@@ -21,6 +21,7 @@ export const Link = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 5px;
 `;
 
 export const IconWrapper = styled.div`

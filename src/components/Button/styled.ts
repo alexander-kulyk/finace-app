@@ -4,7 +4,8 @@ import { transparentize } from 'polished';
 export const Button = styled.button.attrs(() => ({
   type: 'button',
 }))`
-  width: 135px;
+  width: fit-content;
+  min-width: 135px;
   height: 36px;
   color: ${(props) => props.theme.secondaryColor};
   background-color: ${(props) => props.theme.bgPrimary};
