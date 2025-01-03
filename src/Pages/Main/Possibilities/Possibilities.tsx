@@ -14,6 +14,7 @@ const styles = {
   title: {
     fontSize: 20,
     textAlign: 'start' as CSSProperties['textAlign'],
+    marginBottom: 16,
   },
 };
 
@@ -21,40 +22,45 @@ export const Possibilities: React.FC = () => {
   return (
     <S.Section className='container'>
       <S.Wrapper>
-        {/* <S.TextWrapper>
+        <S.TextWrapper>
           <Title text={'Everything you need. Nothing you don’t'} />
           <S.Paragraph>
             Financial management and visibility in one place. Experience
             <S.Span> a flexible toolkit</S.Span> that makes every task feel like
             a breeze.'
           </S.Paragraph>
-        </S.TextWrapper> */}
-
-        <Card
-          styles={styles}
-          image={firstCard}
-          title={'Insights at your fingertips'}
-          paragraph={
-            'All your data and finances in one place to provide quick answers and make decisions instantly.'
-          }
-        />
-        <Card
-          styles={styles}
-          image={secondCard}
-          title={'Manage in real time'}
-          paragraph={
-            'Have full control of your business finances on the go using our iOS/Android mobile apps. Because, you know, it is 2023.'
-          }
-        />
-        <Card
-          styles={styles}
-          image={thirdCard}
-          title={'Important business alerts'}
-          paragraph={
-            'Choose the alerts you need and receive them via email, mobile or Slack. Review and take action in one click.'
-          }
-        />
+        </S.TextWrapper>
         <S.WrapperCard>
+          <Card
+            styles={styles}
+            image={firstCard}
+            title={'Insights at your fingertips'}
+            paragraph={
+              'All your data and finances in one place to provide quick answers and make decisions instantly.'
+            }
+          />
+        </S.WrapperCard>
+        <S.WrapperCard>
+          <Card
+            styles={styles}
+            image={secondCard}
+            title={'Manage in real time'}
+            paragraph={
+              'Have full control of your business finances on the go using our iOS/Android mobile apps. Because, you know, it is 2023.'
+            }
+          />
+        </S.WrapperCard>
+        <S.WrapperCard>
+          <Card
+            styles={styles}
+            image={thirdCard}
+            title={'Important business alerts'}
+            paragraph={
+              'Choose the alerts you need and receive them via email, mobile or Slack. Review and take action in one click.'
+            }
+          />
+        </S.WrapperCard>
+        <S.WrapperCard span={7}>
           <Card
             styles={styles}
             image={fourthCard}
@@ -64,14 +70,16 @@ export const Possibilities: React.FC = () => {
             }
           />
         </S.WrapperCard>
-        <Card
-          styles={styles}
-          image={fifthCard}
-          title={'You’re in control'}
-          paragraph={
-            'Lightning fast. Shortcuts for everything. Command+K on Mac, Ctrl+K on Windows. Dark mode.'
-          }
-        />
+        <S.WrapperCard span={5}>
+          <Card
+            styles={{ ...styles, imageWrapper: { marginBottom: '100px' } }}
+            image={fifthCard}
+            title={'You’re in control'}
+            paragraph={
+              'Lightning fast. Shortcuts for everything. Command+K on Mac, Ctrl+K on Windows. Dark mode.'
+            }
+          />
+        </S.WrapperCard>
       </S.Wrapper>
     </S.Section>
   );

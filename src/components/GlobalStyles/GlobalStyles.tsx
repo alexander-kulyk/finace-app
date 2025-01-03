@@ -21,6 +21,7 @@ html {
   }
 
   .container{
+    width: 1280px;
     padding: 96px 20px;
       display: flex;
    flex-direction: column;

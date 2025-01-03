@@ -6,19 +6,13 @@ export const Section = styled.section`
 `;
 
 export const Wrapper = styled.div`
-  /* display: grid;
-  grid-template-columns: repeat(12, 1fr); 12 колонок */
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
 `;
 
-export const WrapperCard = styled.div`
-  & img {
-    margin-top: 30px;
-    margin-bottom: 60px;
-  }
+export const WrapperCard = styled.div<{ span?: number }>`
+  grid-column: span ${({ span }) => span || 4};
 `;
 
 export const Paragraph = styled.p`
@@ -38,9 +32,10 @@ export const Span = styled.span`
 `;
 
 export const TextWrapper = styled.div`
-  min-width: 576px;
-`;
-
-export const FirstRow = styled.div`
-  grid-column: span 4;
+  grid-column: span 12;
+  width: 491px;
+  & h2 {
+    text-align: start;
+  }
+  margin-bottom: 64px;
 `;
