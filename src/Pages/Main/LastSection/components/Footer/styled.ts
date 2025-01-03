@@ -13,6 +13,10 @@ export const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
+export const Link = styled.a`
+  color: ${(props) => props.theme.primaryColor};
+`;
+
 export const WrapperCopyright = styled.div`
   display: block;
   -webkit-line-clamp: 3;
@@ -43,4 +47,7 @@ export const WrapperSocialMedia = styled.div`
 
 export const WrapperIcon = styled.div`
   padding: 10px;
+  :hover {
+    transform: scale(1.1);
+  }
 `;

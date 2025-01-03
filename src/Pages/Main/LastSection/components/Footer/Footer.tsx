@@ -22,8 +22,11 @@ export const Footer: React.FC = () => {
     <S.Container>
       <S.Wrapper>
         <S.WrapperCopyright>
-          &copy; 2023 Cobalt Financial Technologies Inc. Privacy Policy Terms of
-          Use
+          &copy; 2023 Cobalt Financial Technologies Inc.{' '}
+          <S.Link href='https://en.wikipedia.org/wiki/Privacy_policy'>
+            Privacy Policy
+          </S.Link>{' '}
+          Terms of Use
         </S.WrapperCopyright>
         <S.WrapperSocialMedia>
           <S.WrapperIcon

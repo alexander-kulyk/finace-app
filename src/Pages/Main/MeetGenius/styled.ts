@@ -6,7 +6,7 @@ export const Section = styled.section`
 
   &::after {
     position: relative;
-    bottom: -164px;
+    bottom: -95px;
     content: '';
     background-image: url(${lightImage});
     width: 500px;
