@@ -57,12 +57,13 @@ export const Hero: React.FC<IProps> = ({ children }) => {
             <S.ButtonWrapper>
               <Button onClick={onClickJoinUs} title={'Join us'} />
             </S.ButtonWrapper>
-            <S.Link href='#cryptoAnalytics'>
-              <Paragraph text={'Learn more'} />
-              <S.IconWrapper
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-              >
+            <S.Link
+              href='#cryptoAnalytics'
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              <Paragraph text={'Learn more'} isHovered={isHovered} />
+              <S.IconWrapper>
                 <ArrowSVG isHovered={isHovered} />
               </S.IconWrapper>
             </S.Link>

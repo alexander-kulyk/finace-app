@@ -14,7 +14,10 @@ export const ImageWrapper = styled.div`
   width: 100%;
 `;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+  width: 100%;
+  height: auto;
+`;
 
 export const WrapperImage = styled.div`
   background-image: url('../../../assets/image/insights_bg.png');

@@ -32,7 +32,10 @@ export const MeetGenius: React.FC = () => {
           </S.Paragraph>
         </S.WrapperTitle>
         <Card
-          styles={cardStyles}
+          styles={{
+            ...cardStyles,
+            imageWrapper: { width: '592px', height: '366px' },
+          }}
           image={SmartForecasting}
           title={'Smart forecasting'}
           paragraph={
@@ -40,7 +43,10 @@ export const MeetGenius: React.FC = () => {
           }
         />
         <Card
-          styles={cardStyles}
+          styles={{
+            ...cardStyles,
+            imageWrapper: { width: '592px', height: '366px' },
+          }}
           image={ChatWithGenius}
           title={'Chat with Genius'}
           paragraph={

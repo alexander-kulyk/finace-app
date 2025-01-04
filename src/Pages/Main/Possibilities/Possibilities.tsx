@@ -32,7 +32,10 @@ export const Possibilities: React.FC = () => {
         </S.TextWrapper>
         <S.WrapperCard>
           <Card
-            styles={styles}
+            styles={{
+              ...styles,
+              imageWrapper: { width: '384px', height: '326px' },
+            }}
             image={firstCard}
             title={'Insights at your fingertips'}
             paragraph={
@@ -42,7 +45,10 @@ export const Possibilities: React.FC = () => {
         </S.WrapperCard>
         <S.WrapperCard>
           <Card
-            styles={styles}
+            styles={{
+              ...styles,
+              imageWrapper: { width: '384px', height: '326px' },
+            }}
             image={secondCard}
             title={'Manage in real time'}
             paragraph={
@@ -52,7 +58,10 @@ export const Possibilities: React.FC = () => {
         </S.WrapperCard>
         <S.WrapperCard>
           <Card
-            styles={styles}
+            styles={{
+              ...styles,
+              imageWrapper: { width: '384px', height: '326px' },
+            }}
             image={thirdCard}
             title={'Important business alerts'}
             paragraph={
@@ -62,7 +71,14 @@ export const Possibilities: React.FC = () => {
         </S.WrapperCard>
         <S.WrapperCard span={7}>
           <Card
-            styles={{ ...styles, imageWrapper: { marginBottom: '79px' } }}
+            styles={{
+              ...styles,
+              imageWrapper: {
+                marginBottom: '79px',
+                width: '696px',
+                height: '288px',
+              },
+            }}
             image={fourthCard}
             title={'Important business alerts'}
             paragraph={
@@ -72,7 +88,10 @@ export const Possibilities: React.FC = () => {
         </S.WrapperCard>
         <S.WrapperCard span={5}>
           <Card
-            styles={styles}
+            styles={{
+              ...styles,
+              imageWrapper: { width: '488px', height: '366px' },
+            }}
             image={fifthCard}
             title={'You’re in control'}
             paragraph={
