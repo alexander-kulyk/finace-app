@@ -53,10 +53,10 @@ export const Ethereum: React.FC = () => {
           height={300}
           data={data}
           margin={{
-            top: 5,
-            right: 30,
+            top: 20,
+            right: 20,
+            bottom: 20,
             left: 20,
-            bottom: 5,
           }}
         >
           <CartesianGrid strokeDasharray='3 3' />
