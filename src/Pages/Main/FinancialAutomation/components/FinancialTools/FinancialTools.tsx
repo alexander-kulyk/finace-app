@@ -13,7 +13,7 @@ const styles: { [key: string]: CSSProperties } = {
   },
 };
 
-export const FinancialAutomation: React.FC = () => {
+export const FinancialTools: React.FC = () => {
   const onClickJoinUs = () => {
     window.open(
       'https://accounts.binance.com/en/register/business?return_to=aHR0cHM6Ly93d3cuYmluYW5jZS5jb20vZW4vY3J5cHRvL2J1eQ%3D%3D',

@@ -1,12 +1,12 @@
 //component
-import { FinancialAutomation } from './components';
+import { FinancialTools } from './components';
 import { Footer } from './components/Footer';
 import * as S from './styled';
 
-export const LastSection: React.FC = () => {
+export const FinancialAutomation: React.FC = () => {
   return (
     <S.Section className='container'>
-      <FinancialAutomation />
+      <FinancialTools />
       <Footer />
     </S.Section>
   );
