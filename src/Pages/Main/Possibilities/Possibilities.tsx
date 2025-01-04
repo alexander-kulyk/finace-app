@@ -62,7 +62,7 @@ export const Possibilities: React.FC = () => {
         </S.WrapperCard>
         <S.WrapperCard span={7}>
           <Card
-            styles={styles}
+            styles={{ ...styles, imageWrapper: { marginBottom: '79px' } }}
             image={fourthCard}
             title={'Important business alerts'}
             paragraph={
@@ -72,7 +72,7 @@ export const Possibilities: React.FC = () => {
         </S.WrapperCard>
         <S.WrapperCard span={5}>
           <Card
-            styles={{ ...styles, imageWrapper: { marginBottom: '100px' } }}
+            styles={styles}
             image={fifthCard}
             title={'You’re in control'}
             paragraph={
