@@ -17,6 +17,7 @@ export const ImageWrapper = styled.div`
 export const Image = styled.img`
   width: 100%;
   height: auto;
+  display: block;
 `;
 
 export const WrapperImage = styled.div`
