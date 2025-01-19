@@ -39,15 +39,12 @@ export const Paragraph = styled.p`
 
 export const WrapperSocialMedia = styled.div`
   display: flex;
-
   > *:hover {
+    transform: scale(1.1);
     cursor: pointer;
   }
 `;
 
 export const WrapperIcon = styled.div`
   padding: 10px;
-  :hover {
-    transform: scale(1.1);
-  }
 `;
