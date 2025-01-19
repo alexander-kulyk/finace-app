@@ -7,6 +7,7 @@ import * as S from './styled';
 const styles: { [key: string]: CSSProperties } = {
   title: {
     textAlign: 'start',
+    width: 484,
   },
 };
 
@@ -16,7 +17,7 @@ export const GeneralInformation: React.FC = () => {
       <S.Wrapper>
         <S.SecondaryContainer>
           <Title
-            text={'Who said finance has to be boring?'}
+            text={`Who said finance has to be boring?`}
             styles={styles.title}
           />
         </S.SecondaryContainer>
