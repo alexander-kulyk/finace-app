@@ -41,4 +41,17 @@ export const Wrapper = styled.div`
   & > :last-child {
     margin-left: 10px;
   }
+
+  @media (max-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+export const WrapperCard = styled.div`
+  @media (max-width: 1280px) {
+    margin-bottom: 32px;
+  }
 `;

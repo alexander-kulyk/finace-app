@@ -31,17 +31,19 @@ export const MeetGenius: React.FC = () => {
             figures and <S.Span>illuminate key trends</S.Span> in your business.
           </S.Paragraph>
         </S.WrapperTitle>
-        <Card
-          styles={{
-            ...cardStyles,
-            imageWrapper: { width: '592px', height: '366px' },
-          }}
-          image={SmartForecasting}
-          title={'Smart forecasting'}
-          paragraph={
-            'Harness the power of Cobalt predictive analytics to map out the financial future of your business.'
-          }
-        />
+        <S.WrapperCard>
+          <Card
+            styles={{
+              ...cardStyles,
+              imageWrapper: { width: '592px', height: '366px' },
+            }}
+            image={SmartForecasting}
+            title={'Smart forecasting'}
+            paragraph={
+              'Harness the power of Cobalt predictive analytics to map out the financial future of your business.'
+            }
+          />
+        </S.WrapperCard>
         <Card
           styles={{
             ...cardStyles,

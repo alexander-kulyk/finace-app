@@ -9,6 +9,13 @@ export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 32px;
+
+  @media (max-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const WrapperCard = styled.div<{ span?: number }>`

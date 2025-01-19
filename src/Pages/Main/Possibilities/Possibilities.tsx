@@ -86,7 +86,7 @@ export const Possibilities: React.FC = () => {
             }
           />
         </S.WrapperCard>
-        <S.WrapperCard span={5}>
+        <S.WrapperCard span={5} className='fifthCard'>
           <Card
             styles={{
               ...styles,

@@ -16,6 +16,10 @@ export const Wrapper = styled.div`
   border-radius: 5px;
   border: 1px solid
     ${(props) => transparentize(0.7, props.theme.secondaryColor)};
+
+  @media (max-width: 1280px) {
+    width: 1024px;
+  }
 `;
 
 export const LinkPages = styled(NavLink)`

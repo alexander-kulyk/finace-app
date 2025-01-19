@@ -6,6 +6,9 @@ export const Container = styled.footer`
   padding-top: 20px;
   margin-bottom: 100px;
   border-top: 1px solid ${() => transparentize(0.9, '#FFFFFF')};
+  @media (max-width: 1280px) {
+    width: 1024px;
+  }
 `;
 
 export const Wrapper = styled.div`
