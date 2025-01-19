@@ -22,10 +22,12 @@ export const Footer: React.FC = () => {
     <S.Container>
       <S.Wrapper>
         <S.WrapperCopyright>
-          &copy; 2023 Cobalt Financial Technologies Inc.{' '}
+          &copy; 2023 Cobalt Financial Technologies Inc.
+          {Array(5).fill('\u00a0').join('')}
           <S.Link href='https://en.wikipedia.org/wiki/Privacy_policy'>
             Privacy Policy
-          </S.Link>{' '}
+          </S.Link>
+          {Array(5).fill('\u00a0').join('')}
           Terms of Use
         </S.WrapperCopyright>
         <S.WrapperSocialMedia>
