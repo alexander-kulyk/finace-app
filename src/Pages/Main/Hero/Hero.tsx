@@ -35,7 +35,7 @@ export const Hero: React.FC<IProps> = ({ children }) => {
     );
   };
 
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState<boolean>(false);
 
   return (
     <>

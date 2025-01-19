@@ -21,11 +21,9 @@ export const Menu = () => {
         <S.NewsLink href={'https://finance.yahoo.com/news/'} target='blank'>
           {'News'}
         </S.NewsLink>
-        <S.ButtonContainer>
-          <S.ButtonWrapper>
-            <Button onClick={onClickJoinUs} title={'Join us'} />
-          </S.ButtonWrapper>
-        </S.ButtonContainer>
+        <S.ButtonWrapper>
+          <Button onClick={onClickJoinUs} title={'Join us'} />
+        </S.ButtonWrapper>
       </S.NavigationWrapper>
     </S.Navigation>
   );

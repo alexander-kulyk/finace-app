@@ -15,6 +15,7 @@ export const Logo = styled.a`
 `;
 
 export const NavigationWrapper = styled.nav`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +30,7 @@ export const ButtonWrapper = styled.div`
   &::before {
     position: absolute;
     top: 35px;
-    left: 15px;
+    left: 79px;
     content: '';
     width: 105px;
     height: 1px;
